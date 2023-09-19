@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: redis-leader
   labels:
-      app: redis-leader
+      app: redis
       role: leader
       tier: backend
 spec:
@@ -14,7 +14,7 @@ spec:
   template:
     metadata:
       labels:
-        app: redis-leader
+        app: redis
         role: leader
         tier: backend
     spec:

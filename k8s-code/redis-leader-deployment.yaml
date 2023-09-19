@@ -2,13 +2,12 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: redis-leader
-  namespace: guestbook
   labels:
       app: redis-leader
       role: leader
       tier: backend
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: redis
